@@ -184,7 +184,18 @@ body {
   --third-black: #000000;
   --fourth-white: #ffffff;
 }
-
+/*-------------------------------------------------
+Scrolls
+--------------------------------------------------*/
+#offer {
+  scroll-margin: 5rem;
+}
+#about {
+  scroll-margin: 6rem;
+}
+#contact {
+  scroll-margin: 6rem;
+}
 /*-------------------------------------------------
 Header
 --------------------------------------------------*/
@@ -260,7 +271,7 @@ main {
   flex-direction: row;
   flex-grow: 1;
   background-color: var(--primary-yellow);
-  padding: 1.5rem 1.5rem;
+  padding: 4rem 1.5rem 4rem 1.5rem;
   box-shadow: 0 0 5px 15px var(--primary-yellow);
 }
 .home-description {
@@ -316,7 +327,7 @@ Offer
   justify-content: flex-start;
   flex-wrap: wrap;
   color: var(--secondary-blue);
-  padding: 2rem 4rem;
+  padding: 4rem 4rem 2rem;
 }
 .offer-caption {
   font-size: 5rem;
@@ -428,7 +439,7 @@ Contact
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding: 2rem 0;
+  padding: 2rem 0 8rem;
 }
 .contact-adress {
   display: flex;
