@@ -363,6 +363,7 @@ Offer
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
 /*-------------------------------------------------
 About me
@@ -426,7 +427,7 @@ Contact
   justify-content: flex-start;
   flex-wrap: wrap;
   color: var(--secondary-blue);
-  padding: 2rem 4rem;
+  padding: 3rem 4rem;
 }
 .contact-caption {
   font-size: 5rem;
@@ -440,6 +441,7 @@ Contact
   align-items: center;
   width: 100%;
   padding: 2rem 0 8rem;
+  color: var(--secondary-blue);
 }
 .contact-adress {
   display: flex;
@@ -453,12 +455,33 @@ Contact
   margin: 0 1rem;
   line-height: 3rem;
   font-size: 2rem;
+  font-weight: 700;
 }
-contact-form {
-  display: flex;
+.contact-form {
+  display: none;
   width: calc(50% - 20rem);
   border: 1px solid #000000;
   background-color: red;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary-blue);
+  align-items: center;
+  width: calc(50% - 20rem);
+  /* border: 1px solid #000000; */
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contact-info > i {
+  font-size: 6rem;
+  margin: 2rem 0;
+}
+.contact-info > a {
+  font-size: 2rem;
+  margin: 2rem 0;
+  color: var(--primary-yellow);
+  text-decoration: none;
 }
 /*-------------------------------------------------
 Articles
@@ -471,7 +494,29 @@ Aside
 /*-------------------------------------------------
 Footer
 --------------------------------------------------*/
-
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--secondary-blue);
+  box-shadow: 0 0 5px 15px var(--secondary-blue);
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--secondary-blue);
+  box-shadow: 0 0 5px 15px var(--secondary-blue);
+  color: var(--fourth-white);
+  font-family: Handle;
+  font-size: 1.5rem;
+}
 /*-------------------------------------------------
 Media Queries
 --------------------------------------------------*/
