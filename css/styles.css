@@ -1,0 +1,469 @@
+/*-------------------------------------------------
+Fonts
+--------------------------------------------------*/
+@font-face {
+  font-family: Nurito;
+  src: url("../fonts/nunito/static/Nunito-Regular.ttf");
+}
+@font-face {
+  font-family: Nurito_italic;
+  src: url("../fonts/nunito/static/Nunito-Italic.ttf");
+}
+@font-face {
+  font-family: Nurito_bold;
+  src: url("../fonts/nunito/static/Nunito-ExtraBold.ttf");
+}
+@font-face {
+  font-family: Handle;
+  src: url("../fonts/handlee/Handlee-Regular.ttf");
+}
+/*
+@font-face {
+    font-family: Proxima_Nova;
+    src: url("../fonts/Proxima Nova/ProximaNova-Regular.woff");
+}
+*/
+
+/*-------------------------------------------------
+CSS Reset
+--------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*-------------------------------------------------
+Styles
+--------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  font-family: Nurito;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --primary-yellow: #f7c61d;
+  --secondary-blue: #00394f;
+  --third-black: #000000;
+  --fourth-white: #ffffff;
+}
+
+/*-------------------------------------------------
+Header
+--------------------------------------------------*/
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-grow: 1;
+  /* border: 1px solid red; */
+  background-color: var(--fourth-white);
+  padding: 1.5rem 1.5rem;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  /* border: 1px solid blue; */
+}
+.header-logo {
+  font-weight: 900;
+  font-size: 4rem;
+  padding-left: 2rem;
+}
+.header-logo > i {
+  color: var(--secondary-blue);
+}
+.header-logo > i:hover {
+  color: var(--third-black);
+}
+.header-logo > span {
+  color: var(--primary-yellow);
+}
+div.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+  flex-grow: 1;
+}
+nav.header-navigation {
+  display: flex;
+  /* border: 1px solid green; */
+}
+nav.header-navigation > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav.header-navigation > ul > li {
+  display: flex;
+}
+nav.header-navigation > ul > li > a {
+  font-size: 1.5rem;
+  padding-right: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-decoration: none;
+  color: var(--secondary-blue);
+}
+nav.header-navigation > ul > li > a:hover {
+  color: var(--primary-yellow);
+}
+/*-------------------------------------------------
+Main
+--------------------------------------------------*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  background-color: var(--primary-yellow);
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0 0 5px 15px var(--primary-yellow);
+}
+.home-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1px;
+  flex-grow: 1;
+  align-items: stretch;
+  /* border: 1px solid red; */
+}
+.home-caption {
+  font-size: 2rem;
+  font-family: Handle;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--fourth-white);
+}
+.home-slogan {
+  font-size: 5rem;
+  line-height: 6rem;
+  font-family: Handle;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--fourth-white);
+}
+.home-desctoption {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-family: Handle;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--fourth-white);
+}
+.home-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1px;
+  flex-grow: 1;
+  /* border: 1px solid red; */
+}
+.home-picture > img {
+  max-width: 100%;
+  height: auto;
+  /* border: 1px solid red; */
+}
+/*-------------------------------------------------
+Offer
+--------------------------------------------------*/
+.offer-caption-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: var(--secondary-blue);
+  padding: 2rem 4rem;
+}
+.offer-caption {
+  font-size: 5rem;
+  font-family: Handle;
+  text-transform: capitalize;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: var(--secondary-blue);
+  padding: 1rem 5rem;
+}
+.offer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  box-shadow: 2px 2px 15px 5px black;
+  line-height: 2rem;
+  margin: 2rem 1rem;
+}
+.offer-wrapper > img {
+  width: 100%;
+}
+.offer-wrapper > i {
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+.offer-wrapper > span {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+/*-------------------------------------------------
+About me
+--------------------------------------------------*/
+.about-caption-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: var(--secondary-blue);
+  padding: 2rem 4rem;
+  background-color: var(--primary-yellow);
+  box-shadow: 0 0 5px 15px var(--primary-yellow);
+}
+.about-caption {
+  font-size: 5rem;
+  font-family: Handle;
+  text-transform: capitalize;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--primary-yellow);
+  box-shadow: 0 0 5px 15px var(--primary-yellow);
+}
+.about-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.about-photo > img {
+  width: calc(100% - 20rem);
+  box-shadow: 2px 2px 15px 5px black;
+}
+.about-description {
+  /* border: 1px solid black; */
+  color: var(--secondary-blue);
+  display: flex;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 600;
+  width: 100%;
+}
+.about-description > span {
+  width: calc(100% - 5rem);
+}
+.about-description > span > ul > li {
+  padding-left: 2rem;
+  list-style-position: inside;
+  list-style-type: square;
+}
+/*-------------------------------------------------
+Contact
+--------------------------------------------------*/
+.contact-caption-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: var(--secondary-blue);
+  padding: 2rem 4rem;
+}
+.contact-caption {
+  font-size: 5rem;
+  font-family: Handle;
+  text-transform: capitalize;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+.contact-adress {
+  display: flex;
+  max-width: calc(50% - 3rem);
+  /* border: 1px solid #000000; */
+  box-shadow: 2px 2px 15px 5px black;
+  align-items: center;
+}
+.contact-adress > div > span {
+  display: block;
+  margin: 0 1rem;
+  line-height: 3rem;
+  font-size: 2rem;
+}
+contact-form {
+  display: flex;
+  width: calc(50% - 20rem);
+  border: 1px solid #000000;
+  background-color: red;
+}
+/*-------------------------------------------------
+Articles
+--------------------------------------------------*/
+
+/*-------------------------------------------------
+Aside
+--------------------------------------------------*/
+
+/*-------------------------------------------------
+Footer
+--------------------------------------------------*/
+
+/*-------------------------------------------------
+Media Queries
+--------------------------------------------------*/
+
+@media (max-width: 1170px) {
+}
