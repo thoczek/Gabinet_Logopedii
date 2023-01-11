@@ -463,7 +463,7 @@ Contact
 .contact-adress {
   display: flex;
   flex-direction: column;
-  max-width: calc(50% - 3rem);
+  width: calc(50% - 3rem);
   /* border: 1px solid #000000; */
   box-shadow: 2px 2px 15px 5px black;
   align-items: center;
@@ -740,7 +740,7 @@ Contact
     align-items: center;
   }
   .contact-adress {
-    max-width: calc(100% - 3rem);
+    width: calc(100% - 3rem);
     padding: 0.5rem 0.5rem 1rem 0.5rem;
   }
   .contact-adress > img {
