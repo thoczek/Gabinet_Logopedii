@@ -215,12 +215,18 @@ header {
 }
 .header-logo > i {
   color: var(--secondary-blue);
+  transition: all 2s;
 }
 .header-logo > i:hover {
   color: var(--third-black);
+  transform: rotateY(180deg);
 }
 .header-logo > span {
   color: var(--primary-yellow);
+  transition: all 2s;
+}
+.header-logo > span:hover {
+  text-shadow: 3px 3px 8px var(--secondary-blue);
 }
 div.header-menu {
   display: flex;
@@ -247,9 +253,11 @@ nav.header-navigation > ul > li > a {
   text-decoration: none;
   text-decoration: none;
   color: var(--secondary-blue);
+  transition: all 0.5s;
 }
 nav.header-navigation > ul > li > a:hover {
   color: var(--primary-yellow);
+  transform: scale(1.1);
 }
 nav.hamburger-menu {
   display: none;
@@ -301,6 +309,10 @@ main {
   font-weight: 700;
   color: var(--secondary-blue);
   margin: 2rem 0;
+  transition: all 1s;
+}
+.home-slogan:hover {
+  color: var(--fourth-white);
 }
 .home-desctoption {
   font-size: 1.5rem;
@@ -349,27 +361,40 @@ Offer
 .offer-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   width: 25rem;
   box-shadow: 2px 2px 15px 5px black;
-  line-height: 2rem;
   margin: 2rem 1rem;
 }
 .offer-wrapper > div {
   width: 100%;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
 }
 .offer-wrapper > div > img {
+  display: block;
   width: 100%;
-  transition: all 0.2s; /* Animation */
+  transition: all 1s; /* Animation */
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid green; */
 }
 .offer-wrapper > div > img:hover {
   width: 100%;
-  transform: scale(1.5);
+  transform: rotateZ(10deg) scale(1.2);
 }
 .offer-wrapper > i {
   font-size: 5rem;
   margin: 2rem 0;
+  /* border: 1px solid blue; */
+  transition: all 0.5s;
+}
+.offer-wrapper > i:hover {
+  color: var(--primary-yellow);
+  transform: scale(1.2);
 }
 .offer-wrapper > span {
   font-size: 1.5rem;
@@ -377,7 +402,9 @@ Offer
   text-align: center;
   margin-bottom: 2rem;
   padding: 0 1rem;
+  /* border: 1px solid red; */
 }
+
 /*-------------------------------------------------
 About me
 --------------------------------------------------*/
@@ -410,6 +437,10 @@ About me
   justify-content: center;
   align-items: center;
   width: 100%;
+  transition: all 2s;
+}
+.about-photo:hover {
+  transform: scale(1.2);
 }
 .about-photo > img {
   width: calc(100% - 20rem);
@@ -512,6 +543,11 @@ Contact
   margin: 2rem 0;
   color: var(--primary-yellow);
   text-decoration: none;
+  transition: all 1s;
+}
+.contact-info > a:hover {
+  transform: scale(1.2);
+  font-weight: 900;
 }
 /*-------------------------------------------------
 Articles
@@ -546,6 +582,20 @@ Footer
   color: var(--fourth-white);
   font-family: ArchitectsDaughter;
   font-size: 1.5rem;
+}
+.copyright :first-child {
+  transition: all 1s;
+}
+.copyright :first-child:hover {
+  color: var(--primary-yellow);
+  transform: scale(1.2);
+}
+.copyright :nth-child(2) {
+  transition: all 1s;
+}
+.copyright :nth-child(2):hover {
+  color: var(--primary-yellow);
+  transform: scale(1.2);
 }
 /*-------------------------------------------------
 Media Queries
