@@ -6,16 +6,8 @@ Fonts
   src: url("../fonts/nunito/static/Nunito-Regular.ttf");
 }
 @font-face {
-  font-family: Nurito_italic;
-  src: url("../fonts/nunito/static/Nunito-Italic.ttf");
-}
-@font-face {
-  font-family: Nurito_bold;
-  src: url("../fonts/nunito/static/Nunito-ExtraBold.ttf");
-}
-@font-face {
-  font-family: Handle;
-  src: url("../fonts/handlee/Handlee-Regular.ttf");
+  font-family: ArchitectsDaughter;
+  src: url("../fonts/architects/ArchitectsDaughter-Regular.ttf");
 }
 /*
 @font-face {
@@ -176,6 +168,7 @@ body {
   font-family: Nurito;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 :root {
@@ -207,6 +200,7 @@ header {
   /* border: 1px solid red; */
   background-color: var(--fourth-white);
   padding: 1.5rem 1.5rem;
+  width: 100%;
 }
 .header-wrapper {
   display: flex;
@@ -294,23 +288,24 @@ main {
 }
 .home-caption {
   font-size: 2rem;
-  font-family: Handle;
+  font-family: ArchitectsDaughter;
   font-style: italic;
   font-weight: 700;
   color: var(--secondary-blue);
 }
 .home-slogan {
-  font-size: 5rem;
-  line-height: 6rem;
-  font-family: Handle;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-family: ArchitectsDaughter;
   font-style: italic;
   font-weight: 700;
   color: var(--secondary-blue);
+  margin: 2rem 0;
 }
 .home-desctoption {
   font-size: 1.5rem;
   line-height: 2.5rem;
-  font-family: Handle;
+  font-family: ArchitectsDaughter;
   font-style: italic;
   font-weight: 700;
   color: var(--secondary-blue);
@@ -340,7 +335,7 @@ Offer
 }
 .offer-caption {
   font-size: 5rem;
-  font-family: Handle;
+  font-family: ArchitectsDaughter;
   text-transform: capitalize;
 }
 
@@ -360,8 +355,17 @@ Offer
   line-height: 2rem;
   margin: 2rem 1rem;
 }
-.offer-wrapper > img {
+.offer-wrapper > div {
   width: 100%;
+  overflow: hidden;
+}
+.offer-wrapper > div > img {
+  width: 100%;
+  transition: all 0.2s; /* Animation */
+}
+.offer-wrapper > div > img:hover {
+  width: 100%;
+  transform: scale(1.5);
 }
 .offer-wrapper > i {
   font-size: 5rem;
@@ -388,7 +392,7 @@ About me
 }
 .about-caption {
   font-size: 5rem;
-  font-family: Handle;
+  font-family: ArchitectsDaughter;
   text-transform: capitalize;
 }
 .about {
@@ -448,7 +452,7 @@ Contact
 }
 .contact-caption {
   font-size: 5rem;
-  font-family: Handle;
+  font-family: ArchitectsDaughter;
   text-transform: capitalize;
 }
 .contact {
@@ -540,7 +544,7 @@ Footer
   background-color: var(--secondary-blue);
   box-shadow: 0 0 5px 15px var(--secondary-blue);
   color: var(--fourth-white);
-  font-family: Handle;
+  font-family: ArchitectsDaughter;
   font-size: 1.5rem;
 }
 /*-------------------------------------------------
