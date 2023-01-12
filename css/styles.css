@@ -313,6 +313,7 @@ main {
 }
 .home-slogan:hover {
   color: var(--fourth-white);
+  transform: scale(1.1) translateX(2rem);
 }
 .home-desctoption {
   font-size: 1.5rem;
