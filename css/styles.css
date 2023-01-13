@@ -199,7 +199,7 @@ header {
   flex-grow: 1;
   /* border: 1px solid red; */
   background-color: var(--fourth-white);
-  padding: 1.5rem 1.5rem;
+  padding: 1.5rem 0;
   width: 100%;
 }
 .header-wrapper {
@@ -313,7 +313,7 @@ main {
 }
 .home-slogan:hover {
   color: var(--fourth-white);
-  transform: scale(1.1) translateX(2rem);
+  transform: scale(1.1) translateX(3rem);
 }
 .home-desctoption {
   font-size: 1.5rem;
