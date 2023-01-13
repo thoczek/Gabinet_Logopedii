@@ -242,7 +242,7 @@ header {
   transition: all 2s;
 }
 .header-logo > span:hover {
-  text-shadow: 3px 3px 8px var(--secondary-blue);
+  text-shadow: -3px -3px 8px var(--secondary-blue);
 }
 div.header-menu {
   display: flex;
@@ -521,9 +521,14 @@ Contact
   box-shadow: 2px 2px 15px 5px black;
   align-items: center;
   padding: 2rem;
+  overflow: hidden;
 }
 .contact-adress > img {
   width: 100%;
+  transition: all 1s;
+}
+.contact-adress > img:hover {
+  transform: translate(0, 4rem) scale(2.5);
 }
 .contact-adress > div > span {
   display: block;
