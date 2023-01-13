@@ -214,13 +214,28 @@ header {
   padding-left: 2rem;
 }
 .header-logo > i {
-  color: var(--secondary-blue);
-  transition: all 2s;
+  /* color: var(--secondary-blue); */
+  /* transition: all 2s; */
+  animation: rotate-logo;
+  animation-direction: alternate;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  animation-timing-function: ease-in-out;
 }
-.header-logo > i:hover {
+@keyframes rotate-logo {
+    from {
+    color: var(--third-black);
+  }
+  to {
+    color: var(--secondary-blue);
+    transform: rotateY(180deg);
+  }
+}
+/* .header-logo > i:hover {
   color: var(--third-black);
   transform: rotateY(180deg);
-}
+} */
 .header-logo > span {
   color: var(--primary-yellow);
   transition: all 2s;
