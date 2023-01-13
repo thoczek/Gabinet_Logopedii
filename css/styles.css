@@ -553,6 +553,7 @@ Contact
 .contact-info > i {
   font-size: 6rem;
   margin: 2rem 0;
+  text-shadow: 1rem 1rem 5rem black;
 }
 .contact-info > a {
   font-size: 2rem;
