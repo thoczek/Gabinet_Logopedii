@@ -193,6 +193,7 @@ Scrolls
 Header
 --------------------------------------------------*/
 header {
+  z-index: 100;
   display: flex;
   position: sticky;
   top: 0;
@@ -370,6 +371,7 @@ Offer
 .offer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
   color: var(--secondary-blue);
   padding: 1rem 5rem;
@@ -453,14 +455,14 @@ About me
   justify-content: center;
   align-items: center;
   width: 100%;
-  transition: all 2s;
 }
-.about-photo:hover {
-  transform: scale(1.2);
+.about-photo > img:hover {
+  transform: scale(1.05);
 }
 .about-photo > img {
   width: calc(100% - 20rem);
   box-shadow: 2px 2px 15px 5px black;
+  transition: all 2s;
 }
 .about-description {
   /* border: 1px solid black; */
