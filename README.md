@@ -1,2 +1,2 @@
 # Gabinet_logopedii
- HRML, CSS, Flexbox
+ HTML, CSS, Flexbox
