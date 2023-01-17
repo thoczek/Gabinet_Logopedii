@@ -1,4 +1,4 @@
 # Gabinet_logopedii
 
-######Technology used:<br>
+###### Technology used:<br>
 HTML, CSS, Flexbox, Responsive
